@@ -276,7 +276,7 @@ body{
 
 #anyUserContainer, #showUserBio{
     color: white;
-    border: solid #09141e 2px;
+    border: solid #214d80 4px;
     background-color: #0d1c2b;
     text-align: center;
 }
@@ -308,4 +308,10 @@ body{
 #showUserBio img{
     width: 20%;
     border: solid 4px #09141e;
+}
+
+#editDiv{
+    background-color: #214d80;
+    border-left:  solid 4px #214d80;
+    border-right:  solid 4px #214d80;
 }

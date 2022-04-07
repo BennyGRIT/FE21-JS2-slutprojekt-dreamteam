@@ -65,10 +65,16 @@
     <div id="userBox">
         <div id="bioInfo">All info från</div>
     </div>
+
     <div id="imgDiv"></div>
     <div id="deleteButtonDiv">
+        <div id="theEditButtonDiv">
+            <button id="editBtn">Ändra din information</button>
+        </div>
+    
         <p>Tryck på knappen för att radera din användare. OBS, går inte att ångra.</p>
         <button id="deleteButton">Ta bort din användare</button>
+        
     </div>
 
     <div id="anyUserContainer">
@@ -78,6 +84,41 @@
         <p id="showNameP">namn</p>
         <img id="showImgP"></img>
         <p id="showBioP">Bio</p>
+    </div>
+
+    <div id="editDiv">
+        <form>
+            <p id="changeInfo">Hallå kompis, här kan du ändra din info</p>
+        <label for="editPassword">Ändra ditt lösenord: </label>
+        <input type="password" id="editPassword">
+        <input type="password" placeholder="password" id="confirmChangePassword">
+        <label for="editColor">Ändra färg</label>
+        <select name="selectColor" id="editColor">
+            <option value="Green">Grön</option>
+            <option value="Red">Röd</option>
+            <option value="Blue">Blå</option>
+            <option value="lightblue">Ljusblå</option>
+            <option value="grey">Grå</option>
+            <option value="Black">Svart</option>
+            <option value="purle">Lila</option>
+            <option value="hotpink">hotpink</option>
+        </select>
+        <select name="ProfilbildEdit" id="changeImg">
+            <option value="current">Välj Profilbild</option>
+            <option value="https://1.bp.blogspot.com/-Zg0vhFfnoRA/XW62p3kXfkI/AAAAAAABYEI/xYA7Yj2CiIUukKLWKjFTL9mOvlP5vOK9ACLcBGAs/s1600/4295.jpg">Katt</option>
+            <option value="https://1.bp.blogspot.com/-Otww7FE0H9o/XtAMP1CGujI/AAAAAAABlA0/q43mwvw9bPEIDcs-Q6U16VWF1NQBivY5wCLcBGAsYHQ/s1600/4623.jpg">Apa</option>
+            <option value="https://1.bp.blogspot.com/-iRoGKyuTKyQ/Xk7ywdHwPtI/AAAAAAABfXs/ifBaq4ww7iQjo5fF4B5t8o4yA6XlU1W-ACLcBGAsYHQ/s1600/4515.jpg">Bläckfisk</option>
+            <option value="https://i.pinimg.com/originals/ef/49/69/ef496959119a830aedcc3aefe2d54d2f.png">Pingvin</option>
+            <option value="https://1.bp.blogspot.com/-wytmWndW7EQ/YC1z9KGjMCI/AAAAAAAB14A/KnrWdjXUpegLZRpIZLCBeUdYVZaqikUqgCLcBGAsYHQ/w200-h200/4895.jpg">Bi</option>
+        </select>
+
+        <br>
+        <label for="bioInformation">Vill du ändra din info så skriver du här:</label>
+        <textarea name="bioInformation" id="bioInformation" cols="50" rows="8"></textarea>
+        
+        <button id="editButton">Klicka här för att bekräfta</button>        
+    </form>
+
     </div>
 </div>
 

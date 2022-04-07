@@ -1,5 +1,5 @@
 import { db } from "./firebaseapp";
-import { userBio } from "./bio";
+import { userBio, updateUser } from "./bio";
 import { ref, update, push, DatabaseReference } from "firebase/database";
 
 export class User {
@@ -28,6 +28,7 @@ export class User {
                 
                 forms.style.display = 'none';
                 userBio(this.name, this.bio, this.img, this.id);
+                updateUser(this.name, this.bio, this.img, this.id, this.password);
     
             } else if (this.name != name.value && this.password == password.value) {
                 loginMessage.innerText = 'Fel användarnamn';
